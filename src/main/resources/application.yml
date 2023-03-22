@@ -1,0 +1,35 @@
+spring:
+  main:
+    web-application-type: none
+
+driver:
+  last-name: "insert a base64-encoded value"
+  keyword: "insert a base64-encoded value"
+  license-number: "insert a base64-encoded value"
+
+app:
+  # 0 - Run once and exit
+  # >0 - Run periodically
+  recheck-interval-seconds: 0
+
+icbc:
+  auth-url: "https://onlinebusiness.icbc.com/deas-api/v1/webLogin/webLogin"
+  availability-url: "https://onlinebusiness.icbc.com/deas-api/v1/web/getAvailableAppointments"
+  user-agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+  exam-type: "5-R-1"
+  ignore-reserve-time: false
+  preferred-days-of-week: "[0,1,2,3,4,5,6]"
+  preferred-parts-of-day: "[0,1]"
+  appointment-min-delay-from-now: P5D
+  appointment-max-delay-from-now: P30D
+  locations:
+    2: "Burnaby"
+    8: "North Vancouver"
+    9: "Point Grey"
+    274: "Burnaby Wayburne"
+    275: "Kingsway"
+
+telegram:
+  base-uri: "https://api.telegram.org"
+  token: "insert a base64-encoded value"
+  chat-id: "your chat id"
